@@ -1,16 +1,10 @@
 import React from "react";
 
-interface AnimalComponent {
+export interface AnimalComponent {
   name: string;
   sound: string;
   alive?: boolean;
 }
-
-export const Animals: AnimalComponent[] = [
-  { name: "Lion", sound: "Roar", alive: true },
-  { name: "Elephant", sound: "Trumpet", alive: true },
-  { name: "Giraffe", sound: "Grunt", alive: true },
-];
 
 export class Animal extends React.Component<AnimalComponent> {
   constructor(props: AnimalComponent) {
